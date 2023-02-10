@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo_list/main.dart';
+import 'package:todo_list/src/home/home_page.dart';
 import 'package:todo_list/src/shared/themes/themes.dart';
 
 class AppWidget extends StatelessWidget {
@@ -13,7 +13,7 @@ class AppWidget extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: lightTheme,
       darkTheme: darkTheme,
-      home: const MyHomePage(title: 'TODO List'),
+      home: const HomePage(),
     );
   }
 }
