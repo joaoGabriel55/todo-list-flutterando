@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todo_list/src/home/widgets/custom_drawer.dart';
-import 'package:todo_list/src/shared/widgets/user_image_button.dart';
+import 'package:todo_list/src/shared/widgets/custom_app_bar.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -14,15 +14,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: const CustomDrawer(),
-      appBar: AppBar(
-        title: const Text('TODO List'),
-        actions: const [
-          Padding(
-            padding: EdgeInsets.only(right: 8),
-            child: UserImageButton(),
-          ),
-        ],
-      ),
+      appBar: const CustomAppBar(title: 'TODO List'),
       body: Center(
         child: Column(
           children: [
